@@ -5,7 +5,7 @@ import './cart-icon.styles.scss'
 
 const CartIcon = () => { 
     const { isCartOpen, setIsCartOpen, totalQuantity } = useContext(CartContext)
-    const handleClick = () => setIsCartOpen(isCartOpen);
+    const handleClick = () => setIsCartOpen(!isCartOpen);
 
     return (
         
