@@ -15,11 +15,13 @@ import Shop from './routes/shop/shop.component';
 import Checkout from './routes/checkout/checkout.component';
 
 
-
 const App = () => {
+
   const dispatch = useDispatch()
   
+
   useEffect(() => {
+   
     const unsubscribe = onAuthStateChangedListener((user) => {
         if (user) {
             createUserDocumentFromAuth(user);
@@ -31,7 +33,6 @@ const App = () => {
     return unsubscribe
   }, [])
   
-
 
   return (
     <Routes>
